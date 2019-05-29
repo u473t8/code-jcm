@@ -1,6 +1,6 @@
 # code-jcm
 *code-jcm* is a [JaCaMo](https://github.com/jacamo-lang/jacamo) project file (``.jcm``) syntax highlighter for Visual Studio Code.
-For the change log, see [here](./CHANGELOG.md).
+For the change log, see [here](https://github.com/u473t8/code-jcm/blob/master/CHANGELOG.md/CHANGELOG.md).
 
 ## Installation
 You can install *code-jcm* via the Visual Studio Code *Extensions* panel.
