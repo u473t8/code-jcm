@@ -1,0 +1,79 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "JaCaMo",
+	"patterns": [
+		{
+		   "include": "#comments"
+		},
+		{
+		   "include": "#keywords"
+		},
+		{
+		   "include": "#strings"
+		},
+		{
+		   "include": "#supports"
+		},
+		{
+		   "include": "#variables"
+		}
+	 ],
+	 "repository": {
+		"comments": {
+		   "patterns": [
+			  {
+				 "begin": "//",
+				 "end": "$",
+				 "name": "comment.line.double-slash.jcm"
+			  },
+			  {
+				 "begin": "/\\*",
+				 "end": "\\*/",
+				 "name": "comment.block.jcm"
+			  }
+		   ]
+		},
+		"constants": {
+		   "patterns": [
+			  {
+				 "match": "\\b(true|false)\\b",
+				 "name": "constants.language.jcm"
+			  }
+		   ]
+		},
+		"keywords": {
+		   "patterns": [
+			  {
+				 "match": "\\b(mas|platform|agent|workspace|artifact|organisation|group|scheme|uses|class-path|asl-path|org-path|java-path)\\b",
+				 "name": "keyword.control.jcm"
+			  },
+			  {
+				 "match": "\\b(instances|ag-arch|ag-class|ag-bb-class|goals|beliefs|focus|focuse-by|agents|join|roles|in|debug|responsible-for|verbose|players)\\b",
+				 "name": "keyword.operator.jcm"
+			  }
+		   ]
+		},
+		"strings": {
+		   "patterns": [
+			  {
+				 "begin": "\"",
+				 "end": "\"",
+				 "name": "string.quoted.double.jcm"
+			  }
+		   ]
+		},
+		"supports": {
+		   "patterns": [
+			  {
+				 "match": "(?:^|\\s)[@]\\w+\\b",
+				 "name": "constant.numeric.jcm"
+			  },
+			  {
+				 "match": "\\b[a-z]\\w*\\b",
+				 "name": "support.type.jcm"
+			  }
+		   ]
+		}
+	},
+	"scopeName": "source.jcm"
+}
