@@ -1,5 +1,8 @@
 {
     "name": "code-jcm",
+    "logo": {
+        "file": "./code-jcm-logo.png"
+    },
     "displayName": "code-jcm",
     "description": "Highlights JaCaMo project file (.jcm) syntax",
     "version": "0.0.1",
